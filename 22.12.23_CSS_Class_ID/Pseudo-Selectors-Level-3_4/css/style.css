@@ -1,0 +1,16 @@
+.rahmen :hover img{
+    border: 5px double black;
+    border
+}
+.gray :hover img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.circle img{
+    transition: 1s ease;
+}
+.circle :hover img{
+    border-radius:50%;
+    transition: 1s ease;
+}

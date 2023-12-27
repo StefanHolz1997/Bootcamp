@@ -1,0 +1,131 @@
+<!-- ! doctype ab hioer fängt das html für den browser an-->
+<!DOCTYPE html>
+
+<!-- ! Hier sagen wir das wir eine Deutsch sprachige Seite haben -->
+<html lang="de">
+  <!-- ! Alle Meta Informationen, wie Titel der Seite, Beschreibung der Seite-->
+  <head>
+    <!-- ! Hier steht das wir UTF-8 als format benutzten -->
+    <meta charset="UTF-8" />
+    <!-- ! Die Seite soll immer die ganze Breite einnehmen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ! Titel der Seite -->
+    <title>Hallo Kurs</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="#">Home</a>
+      <!-- Das sind dynamische Pfade -->
+      <a href="./about/about.html">About</a>
+      <a href="./kontakt.html">Kontakt</a>
+      <!-- Das ist ein absoluter Pfad -->
+      <!-- target="_blank" macht die Seite in einem neuen Tab auf -->
+      <a href="https://www.super-code.de/" target="_blank">SuperCode Page</a>
+    </header>
+
+    <!-- ! In den Main Tag kommt der hauptconten -->
+    <main>
+      <section>
+        <h1>Ich eine H1</h1>
+
+        <article>
+          <h2>ich bin eine h2</h2>
+        </article>
+
+        <article>
+          <!-- ! H1 - H6 Je niedriger die zahl desto wichtiger ist die Überschrift (H1 nur 1x je Seite benutzten)-->
+          <h1>h1</h1>
+          <h2>h2</h2>
+          <h3>h3</h3>
+          <h4>h4</h4>
+          <h5>h5</h5>
+          <h6>h6</h6>
+        </article>
+      </section>
+
+      <section>
+        <p>ich bin normaler text</p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam iusto
+          saepe voluptate illum vel! Consequatur ipsa quod ab voluptatem ullam
+          quia? Explicabo accusamus tenetur, cumque quis illum libero quos sed?
+        </p>
+      </section>
+
+      <section>
+        <!-- so benutzten wir Fotos/Bilder -->
+        <img
+          src="./assets/img/flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg"
+          alt="Peepo_Happy"
+        />
+      </section>
+      <!-- Kommentar mit STRG + # -->
+      <section>
+        <!-- Listen -->
+        <!-- ol => ordet list -->
+        <!-- ul => unordet list -->
+        <!-- li => List Item -->
+
+        <!-- *Das ist eine OL -->
+        <ol>
+          <li>eins</li>
+          <li>zwei</li>
+          <li>drei</li>
+          <li>hund</li>
+          <li>hund</li>
+        </ol>
+
+        <!-- *Das ist eine UL -->
+        <ul>
+          <li>eins</li>
+          <li>zwei</li>
+          <li>drei</li>
+          <li>drei</li>
+          <li>vier</li>
+        </ul>
+
+        <!-- * Man kann auch eine Kombination aus beiden machen -->
+        <ul>
+          <li>ein li im ul</li>
+          <li>ein li im ul</li>
+          <li>ein li im ul</li>
+          <li>ein li im ul</li>
+          <ul>
+            <li>Nochmal ein im UL was im UL ist</li>
+            <li>Nochmal ein im UL was im UL ist</li>
+            <ol>
+              <li>Sport machen</li>
+              <li>Einkaufen gehen</li>
+              <li>Wäsche machen:</li>
+              <ol>
+                <li>tshirt</li>
+                <li>Socken</li>
+                <li>Pullis</li>
+              </ol>
+              <li>
+                <a href="kontakt.html" target="_blank">Gehe zu Kontakt</a>
+              </li>
+            </ol>
+          </ul>
+          <li>ich bin der letzte li Tag</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <h4>Apple Footer</h4>
+      <ul>
+        <li>
+          <a href="#">Iphone</a>
+        </li>
+        <li>
+          <a href="#">MacBook</a>
+        </li>
+        <li>
+          <a href="#">IMac</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
