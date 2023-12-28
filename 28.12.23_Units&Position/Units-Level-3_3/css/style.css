@@ -16,7 +16,7 @@ h1 {
   color: #949494;
   text-align: center;
 }
-div {
+.header {
   background-image: linear-gradient(
     to top right,
     purple 20%,
@@ -46,9 +46,39 @@ ul {
   text-align: right;
   margin-right: 20px;
   font-size: 1.6em;
-  color: gray;
   align-items: center;
+  list-style-type: none;
 }
 ul li {
   padding-bottom: 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: gray;
+}
+article{
+  margin-left: 30px;
+}
+h3 {
+  font-size: 5.6em;
+  margin: 300px 0 56px 0;
+}
+article p {
+  width: 690px;
+  height: 76px;
+  font-size: 1.6em;#
+}
+.stuff{
+width: 500px;
+  margin-top: 126px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h4{
+  font-size: 32px;
+  margin: 35px 0 10px 0;
+}
+.stuff p{
+  font-size: 16px;
+  margin-bottom: 60px;
 }
