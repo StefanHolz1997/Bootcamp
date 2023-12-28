@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  background-color: #333333;
+}
+h1 {
+  font-size: 1.7em;
+  width: 75px;
+  height: 41px;
+  color: #949494;
+  text-align: center;
+}
+div {
+  background-image: linear-gradient(to top right, purple, blue, lightblue);
+  text-align: center;
+  display: inline-block;
+  padding: 3px;
+  margin-top: 126px;
+  border-radius: 5px;
+  height: 227px;
+  width: 300px;
+}
