@@ -1,0 +1,111 @@
+@font-face {
+  font-family: raleway;
+  src: url(../assets/font/Raleway-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: raleway;
+}
+
+/* !Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 186px 11px 186px;
+  color: #4c4c4c;
+  height: 8vh;
+}
+
+header h1 a {
+  font-size: 24px;
+  font-weight: lighter;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+header h1 a:hover {
+  color: #3c3c3c;
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+nav a:hover {
+  color: lightskyblue;
+}
+
+/* !Box Mitte */
+
+.box {
+  background: url(../assets/img/photo-1443527216320-7e744084f5a7-1.jpg.png)
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.box h2 {
+  font-size: 60px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.box p {
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+/* * Button */
+.button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#buttonswitch {
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 12rem;
+  height: 3rem;
+  margin: 60px 0 60px 0;
+  transition-duration: 0.4s;
+  font-size: 12px;
+  font-weight: 700;
+}
+#buttonswitch:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#buttonnormal {
+  cursor: pointer;
+  color: #fff;
+  background-color: #745cf9;
+  width: 12rem;
+  height: 3rem;
+  margin: 60px 0 60px 0;
+  transition-duration: 0.4s;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#buttonnormal:hover {
+  background-color: #5443ba;
+}
