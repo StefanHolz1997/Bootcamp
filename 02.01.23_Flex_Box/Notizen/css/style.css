@@ -1,7 +1,124 @@
 img {
   max-width: 100%;
 }
-
+.basic img {
+  width: 200px;
+}
+.basic div {
+  background-color: aqua;
+}
+/*! ==== FELX BASIC */
 .basic {
   display: flex;
+  align-items: center;
+
+  /* Gap macht den Abstand überall, hier benutzte ich gerne relative werde */
+  gap: 4vw;
+
+  /* Macht den Abstand von oben nach unten */
+  /* row-gap: ; */
+
+  /* Macht den Abstand von links nach rechts */
+  /* column-gap: ; */
+}
+
+/** !WICHTIG: FLEX MUSS IMMER DEM ELTERNELEMENT GEGEBEN WERDEN !! */
+.box {
+  background-color: grey;
+  height: 80vh;
+
+  /* So geben wir einem Element flex */
+  display: flex;
+
+  /* Justify-content macht immer im Standard vehalten die X Achse (links nach rechts)*/
+  justify-content: center;
+
+  /* align-items mach immer im Standard vehalten die Y Achse (oben nach unten)*/
+  align-items: center;
+}
+.box div {
+  height: 40px;
+  width: 40px;
+  background-color: red;
+}
+
+/*! ==== Flex direction ==== */
+
+.direction {
+  background-color: aquamarine;
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  /* * mit flex direction können wir die richtung bestimmen*/
+  /* row => ist default*/
+  /* column => ändern wir die achse von oben nach unten */
+  /* row-reverse => spiegelt die elemente in der x Achse */
+  /* column-reverse => spiegelt die elemente in der y Achse */
+}
+/* Wir können auch zb. eine klasse "center" definieren und immer wieder benutzen wenn ein element zentriert werden soll */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.direction div {
+  background-color: blue;
+  color: white;
+  height: 100px;
+  width: 100px;
+
+  /* Flex im Flex verschachtelt benutzten */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ! === Header === */
+/* ! Space-between */
+header {
+  display: flex;
+  align-items: center;
+
+  /** space-between macht den Abstand in der Mitte so groß wie möglich */
+  justify-content: space-between;
+
+  /** Space-around macht den abstand um jeden element nochmal mit herum */
+  /* justify-content: space-around; */
+
+  /* * macht die Abstände immer um jeden element gleich */
+  /* justify-content: space-evenly; */
+}
+
+header h1 {
+  background-color: blanchedalmond;
+}
+
+header nav {
+  background-color: blueviolet;
+}
+
+/* ! === Flex Wrap === */
+.wrap {
+  background-color: brown;
+
+  display: flex;
+  gap: 5px;
+
+  /* Standard verhalten ist das die Elemente kleiner werden wenn der Platz nicht mehr reicht */
+
+  /* derfault => nowrap  */
+  /* flex-wrap: nowrap; */
+
+  /* So werden die Elemente umbrechen sobald kein platz mehr für sie ist */
+  flex-wrap: wrap;
+}
+
+.wrap div {
+  background-color: blue;
+  color: white;
+  width: 130px;
 }
