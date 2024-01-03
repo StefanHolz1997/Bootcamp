@@ -14,7 +14,6 @@ html {
   font-family: Lato;
 }
 
-/* :Header Styling */
 h1 {
   font-size: 2.4rem;
   display: flex;
@@ -25,8 +24,7 @@ h1::before {
   content: url(../assets/img/logo.png.png);
 }
 
-/* :Navbar Styling */
-.navbar {
+.head {
   display: flex;
   gap: 3.2rem;
   align-items: flex-end;
@@ -50,7 +48,6 @@ h1::before {
   color: black;
 }
 
-/* Rings  */
 .section {
   background-color: #d9e8e5;
   display: flex;
