@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+textarea {
+  width: 20vw;
+  height: 8vh;
+}
+
+span {
+  color: red;
+}
+
+input[type="text"] {
+  padding: 7px;
+}
+
+input[type="email"] {
+  padding: 7px;
+  width: 19vw;
+}
+
+select {
+  padding: 7px;
+  width: 20vw;
+}
+
+input[type="submit"] {
+  width: 20vw;
+  height: 3vh;
+  border-style: none;
+  background-color: aqua;
+  transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+  background-color: blue;
+}
