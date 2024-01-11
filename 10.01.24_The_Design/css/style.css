@@ -1,0 +1,210 @@
+@font-face {
+  font-family: inter;
+  src: url(../assets/font/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(../assets/font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: robotolight;
+  src: url(../assets/font/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: robotomedium;
+  src: url(../assets/font/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: robotobold;
+  src: url(../assets/font/Roboto-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: robotomedium;
+}
+
+/* ! Header */
+header {
+  background: url(../assets/img/ilustracion1.png) no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 9vh;
+}
+
+header .cap {
+  padding-left: 7.109vw;
+  padding-top: 4vh;
+}
+
+/* ! Class "cap" */
+.cap h2 {
+  font-size: 24px;
+}
+.cap p {
+  font-family: roboto;
+  font-size: 12px;
+}
+
+/* ! Class cap2 */
+.cap2 {
+  padding-left: 11.25vw;
+  padding-top: 45vh;
+  max-width: 32.063vw;
+}
+
+.cap2 h1 {
+  font-family: robotomedium;
+  font-size: 54px;
+}
+.cap2 p {
+  font-family: robotolight;
+  font-size: 18px;
+  padding-top: 1.8vh;
+  padding-bottom: 5.6vh;
+}
+.rocket {
+  height: 2.8vh;
+  width: auto;
+}
+.cap2 a {
+  text-decoration: none;
+  color: #ff3571;
+  font-family: robotobold;
+  font-size: 14px;
+}
+
+/* ! Animation */
+.person {
+  position: absolute;
+  top: 200px;
+  right: 120px;
+  animation: updown 2s ease-in-out infinite alternate;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.pictures {
+  background: url(../assets/img/images.jpg) no-repeat;
+  background-size: contain;
+  height: 90vh;
+  margin-bottom: 25.4vh;
+}
+
+/* !First Article */
+.bulb {
+  height: 4.8vh;
+  width: auto;
+}
+.idea h2 {
+  font-family: robotomedium;
+  font-size: 38px;
+}
+.idea section {
+  display: flex;
+}
+.idea section h2 {
+  margin-left: 13.281vw;
+  margin-right: 12.578vw;
+  width: 15.047vw;
+}
+.idea section p {
+  font-family: robotolight;
+  font-size: 18px;
+  width: 29vw;
+}
+.challenge {
+  margin-top: 10.7vh;
+  margin-left: 16.875vw;
+  width: 34vw;
+}
+
+/* ! Class "plan" */
+.plan {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 12.656vw;
+  padding-top: 19vh;
+  padding-bottom: 18vh;
+}
+.plan h3 {
+  font-family: robotobold;
+  font-size: 18.72px;
+  padding-bottom: 1.6vh;
+}
+.plan p {
+  font-family: robotolight;
+  font-size: 14px;
+  padding-left: 40px;
+  padding-bottom: 9vh;
+}
+.plans {
+  width: 16.5vw;
+}
+.why h3::before {
+  background-image: url(../assets/img/title02.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 20px;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  content: "";
+}
+.value h3::before {
+  background-image: url(../assets/img/title04.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 20px;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  content: "";
+}
+.design h3::before {
+  background-image: url(../assets/img/title01.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 20px;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  content: "";
+}
+.share h3::before {
+  background-image: url(../assets/img/title03.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 20px;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  content: "";
+}
+
+.letsgo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.letsgo h5 {
+  font-size: 28px;
+  font-family: robotomedium;
+}
+.letsgo p {
+  font-family: robotolight;
+  font-size: 14px;
+  padding-top: 2.4vh;
+  width: 30vw;
+  margin-bottom: 15vh;
+}
