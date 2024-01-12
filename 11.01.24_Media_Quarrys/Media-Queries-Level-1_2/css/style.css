@@ -5,7 +5,7 @@
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.75fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 5px;
   text-align: center;
 }
@@ -57,4 +57,33 @@ footer {
   padding-bottom: 4vh;
 }
 
-@media;
+@media only screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  aside {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+  footer {
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  header,
+  aside,
+  footer {
+    grid-column-end: 2;
+  }
+}
