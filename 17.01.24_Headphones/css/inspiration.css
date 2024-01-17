@@ -17,14 +17,13 @@ html {
 }
 .wraper {
   background-color: #2e2e2e;
-  height: ;
 }
 
 /* !Header */
 .header {
   position: sticky;
   top: 0;
-  padding: 39px;
+  padding: 25px;
   text-align: right;
 }
 .header nav {
@@ -67,13 +66,13 @@ html {
   margin-right: 1.5vw;
   color: #737373;
 }
-.aside a:nth-of-type(5)::before {
+.aside a:nth-of-type(4)::before {
   border: #ffffff 2px solid;
   border-radius: 100%;
   width: 20px;
   text-align: center;
 }
-.aside a:nth-of-type(5) {
+.aside a:nth-of-type(4) {
   color: #ffffff;
 }
 .aside a:hover {
