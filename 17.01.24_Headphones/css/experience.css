@@ -15,20 +15,19 @@ html {
   font-size: 62.5%;
   font-family: work;
 }
-.wraper {
+body {
   background-color: #2e2e2e;
 }
-p {
-  color: #737373;
-  font-size: 1.6rem;
-  line-height: 24px;
+.wraper {
+  background: url(../assets/img/section-experience-1.jpg) no-repeat;
+  background-size: 56.003vw 100vh;
+  height: 100vh;
 }
-h2 {
-  color: #ebccc2;
-  font-size: 2.4rem;
-}
+
+/* !Header */
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
   padding: 39px;
   text-align: right;
 }
@@ -54,26 +53,7 @@ h2 {
   text-decoration: underline;
 }
 
-.aside a {
-  color: #ffffff;
-  font-family: lucida;
-}
-
-main {
-  position: relative;
-}
-
-main h2 {
-  width: 17vw;
-  margin: 4vh 0 9vh 35vw;
-}
-main img {
-  object-fit: cover;
-  height: 140vh;
-  width: 90.426vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
+/* !asidebar */
 .aside {
   position: fixed;
   margin-left: 2.5vw;
@@ -91,40 +71,50 @@ main img {
   margin-right: 1.5vw;
   color: #737373;
 }
-.aside a:nth-of-type(1)::before {
+.aside a:nth-of-type(3)::before {
   border: #ffffff 2px solid;
   border-radius: 100%;
   width: 20px;
   text-align: center;
 }
-.aside a:nth-of-type(1) {
+.aside a:nth-of-type(3) {
   color: #ffffff;
 }
 .aside a:hover {
   color: #ffffff;
 }
-
 .borderleft {
   border-left: 0.5px solid #737373;
   height: 4vh;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-footer {
-  display: flex;
-  justify-content: center;
-  margin: 4vh 14.97vw;
-  gap: 65px;
-  padding-bottom: 10vh;
+
+/* !Main */
+main {
+  position: relative;
 }
-footer img {
-  width: 428px;
-  height: 428px;
+main section {
+  position: absolute;
+  max-width: 43.997vw;
+  top: 10vh;
+  right: 10vw;
 }
-footer div h2 {
-  padding-top: 7.5vh;
-  padding-bottom: 1.8vh;
+main h3 {
+  font-size: 4.8rem;
+  color: #ebccc2;
+  max-width: 20vw;
+  margin-bottom: 9vh;
 }
-footer p {
-  padding-bottom: 2vh;
+main section p {
+  font-size: 1.6rem;
+  color: #737373;
+  line-height: 24px;
+}
+main section p:nth-of-type(1) {
+  max-width: 30.167vw;
+  margin-bottom: 2vh;
+}
+main section p:nth-of-type(2) {
+  max-width: 31.915vw;
 }
