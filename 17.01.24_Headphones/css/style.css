@@ -54,11 +54,6 @@ h2 {
   text-decoration: underline;
 }
 
-.aside a {
-  color: #ffffff;
-  font-family: lucida;
-}
-
 main {
   position: relative;
 }
@@ -103,7 +98,6 @@ main img {
 .aside a:hover {
   color: #ffffff;
 }
-
 .borderleft {
   border-left: 0.5px solid #737373;
   height: 4vh;
