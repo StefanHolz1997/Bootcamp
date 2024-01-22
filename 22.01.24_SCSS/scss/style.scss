@@ -1,0 +1,58 @@
+// CSS
+// section header h2 {
+//   background-color: aqua;
+// }
+
+// SASS  - stärker reduziert, ohne {}
+// section
+//  header
+// h2{
+// background-color: aqua;
+// }
+
+@use "variables";
+@use "mixin";
+
+// SCSS
+section {
+  header {
+    h2 {
+      background-color: variabels.$text-color;
+    }
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+section {
+  header {
+    margin-bottom: 2.5rem;
+    div {
+      h1 {
+        @include mixin.text(center, variables.$text-color, 1.8rem, "Verdana")
+          //   text-align: center;
+          // color: variables.$text-color;
+          // font-size: 1.8rem;
+          // font-family: Verdana, Geneva, Tahoma, sans-serif;
+          // padding: variables.$spacing;
+          // background-color: variables.$bck-color;
+          // text-decoration: underline;
+;
+      }
+      h2 {
+        @include mixin.text(center, black, 1.5rem, Verdana);
+        // text-align: center;
+        // color: black;
+        // font-size: 1.5rem;
+        // font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    }
+  }
+}
