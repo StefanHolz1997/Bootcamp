@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  color: greenyellow;
+  font-size: 40px;
+}

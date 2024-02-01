@@ -8,6 +8,16 @@
   </head>
 
   <body>
+    <main>
+      <form class="outputYear" onsubmit="calcYear(event)">
+        <label for="jahr">Gib dein Geburtsjahr ein</label>
+        <br />
+        <input type="number" id="jahr" />
+        <br />
+        <input type="submit" value="Berechne mein Alter" />
+      </form>
+      <h2 id="outputYear"></h2>
+    </main>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

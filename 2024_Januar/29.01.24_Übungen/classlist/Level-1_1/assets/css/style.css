@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  background-color: red;
+  color: pink;
+  font-size: 45px;
+  text-align: center;
+}
+
+.list {
+  font-size: 20px;
+  color: blue;
+  text-align: center;
+}
+
+.headline {
+  cursor: pointer;
+}
+
+#liste {
+  cursor: pointer;
+}

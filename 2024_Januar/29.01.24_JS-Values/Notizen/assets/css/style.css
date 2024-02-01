@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.super-big {
+  font-size: 50px;
+  color: red;
+  background-color: aqua;
+}
+
+.super-crazy {
+  background-color: green;
+  color: antiquewhite;
+}
+
+header img {
+  height: 70px;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}

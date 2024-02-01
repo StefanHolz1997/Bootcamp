@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>Beackground-Generator</h1>
+      <form class="backgroundForm">
+        <label for="red">Red</label>
+        <input
+          onchange="backgroundChange()"
+          type="range"
+          id="red"
+          min="0"
+          max="100"
+          value="0"
+          step="1"
+        />
+        <label for="green">Green</label>
+        <input
+          onchange="backgroundChange()"
+          type="range"
+          id="green"
+          min="0"
+          max="100"
+          value="0"
+          step="1"
+        />
+        <label for="blue">Blue</label>
+        <input
+          onchange="backgroundChange()"
+          type="range"
+          id="blue"
+          min="0"
+          max="100"
+          value="0"
+          step="1"
+        />
+      </form>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
