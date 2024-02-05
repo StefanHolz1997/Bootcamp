@@ -7,4 +7,5 @@ const partLow = document.querySelector(".partLow");
 
 upSchool.innerHTML = text.toUpperCase();
 lowSchool.innerHTML = text.toLowerCase();
-partUp.innerHTML = text.toUpperCase(`Sam`, `codingschool`);
+partUp.innerHTML = text.toUpperCase();
+partLow.innerHTML = text.toLocaleUpperCase;
