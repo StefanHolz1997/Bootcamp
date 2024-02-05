@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <h1>Zeichen ketten trennungs maschine</h1>
+    <form>
+      <label for="inputText">Zu trennende Zeichenkette</label>
+      <input type="text" id="inputText" />
+      <label for="inputSlice">Trennen bei Zeichenkette:</label>
+      <input type="text" id="inputSlice" />
+      <div>
+        <input
+          type="radio"
+          id="before"
+          value="davor trennen"
+          name="box"
+          checked
+        />
+        <label for="before">davor trennen</label>
+        <input
+          type="radio"
+          id="after"
+          value="danach trennen"
+          name="box"
+          unchecked
+        />
+        <label for="after">danach trennen</label>
+        <input type="button" value="Hier clicken" onclick="checkInput()" />
+      </div>
+    </form>
+    <h2>Ausgabe</h2>
+    <h3>Vorderer Teil</h3>
+    <p></p>
+    <h3>Hinterer Teil</h3>
+    <p></p>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
