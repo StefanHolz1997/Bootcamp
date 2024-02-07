@@ -8,6 +8,45 @@
   </head>
 
   <body>
+    <h2>Mehrwertsteuer-Rechner</h2>
+    <form onsubmit="berechnen(event)">
+      <p>Was soll berechnet werden?</p>
+      <div>
+        <input type="radio" name="aufAbschlag" id="aufschlag" checked />
+        <label for="aufschlag"
+          >Mehwertsteuer aufschlagen (Netto zu Brutto)</label
+        >
+      </div>
+      <div>
+        <input type="radio" name="aufAbschlag" id="abschlag" />
+        <label for="abschlag">Mehwertsteuer abziehen (Brutto zu Netto)</label>
+      </div>
+      <p>Mehrwertsteuersatz</p>
+      <div>
+        <input type="radio" name="steuersatz" id="neunzehn" checked />
+        <label for="neunzehn">19%</label>
+      </div>
+      <div>
+        <input type="radio" name="steuersatz" id="sieben" />
+        <label for="sieben">7%</label>
+      </div>
+      <label for="inputMoney"
+        >Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</label
+      >
+      <br />
+      <input type="number" id="inputMoney" />
+      <br />
+      <input type="submit" value="Berechnen" />
+    </form>
+    <h2>Ergebnis</h2>
+    <div>
+      <p>Merhwertsteuerbetrag</p>
+      <p id="output"><span></span> €</p>
+    </div>
+    <div>
+      <p>Bruttobetrag (Endpreis)</p>
+      <p id="output2"><span></span> €</p>
+    </div>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
