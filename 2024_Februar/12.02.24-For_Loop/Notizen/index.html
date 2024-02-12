@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <h1>Rock Paper Scissord</h1>
+    <p>Choose your Weapon</p>
+
+    <div class="outputs">
+      <p class="player-choice">You choose:</p>
+      <p class="cpu-choice">CPU choose:</p>
+      <p>Result: <span class="result"></span></p>
+    </div>
+    <div class="options">
+      <img onclick="playgame(`rock`)" src="./assets/img/rock.png" alt="" />
+      <img onclick="playgame(`paper`)" src="./assets/img/paper.png" alt="" />
+      <img
+        onclick="playgame(`scissor`)"
+        src="./assets/img/scissors.png"
+        alt=""
+      />
+    </div>
+    <input
+      onclick="document.location.reload()"
+      type="reset"
+      value="restart game"
+    />
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
