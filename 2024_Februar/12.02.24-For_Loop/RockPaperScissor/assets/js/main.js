@@ -5,14 +5,14 @@ const resultOuput = document.querySelector(".result");
 
 function playgame(playerChoice) {
   const cpuChoice = choices[Math.floor(Math.random() * 3)];
-  let result = "";
+  let result;
 
   if (playerChoice === cpuChoice) {
-    result = "IT's a TIE!";
+    result = "IT'S A TIE!";
   } else {
     switch (playerChoice) {
       case "rock":
-        result = cpuChoice === "scissors" ? "YOU WIN!" : "YOU LOOSE!";
+        result = cpuChoice === "scissor" ? "YOU WIN!" : "YOU LOOSE!";
         break;
       case "paper":
         result = cpuChoice === "rock" ? "YOU WIN!" : "YOU LOOSE!";
@@ -22,7 +22,6 @@ function playgame(playerChoice) {
         break;
     }
   }
-
   playerOutput.innerHTML = `You choose: ${playerChoice}`;
   cpuOuput.innerHTML = `CPU choose: ${cpuChoice}`;
   resultOuput.innerHTML = result;
