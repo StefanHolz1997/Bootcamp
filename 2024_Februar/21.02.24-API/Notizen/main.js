@@ -94,4 +94,4 @@ fetch("https://fakestoreapi.com/products")
       document.querySelector(".product").appendChild(productItem);
     });
   })
-  .catch((error) => console.log("Fehler im gesamt Fetch", err)); // err ist frei wählbar
+  .catch((error) => console.log("Fehler im gesamt Fetch", error)); // error ist frei wählbar
