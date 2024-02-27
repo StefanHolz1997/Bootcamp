@@ -1,4 +1,4 @@
-import Home from "../../react_basic/src/page/Home/Home";
+import Home from "./page/Home";
 import "./App.css";
 
 function App() {

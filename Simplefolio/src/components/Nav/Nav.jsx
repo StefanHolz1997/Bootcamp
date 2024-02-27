@@ -1,15 +1,17 @@
+import DarkLight from "../DarkLight/DarkLight";
 import "./Nav.css";
 
 const Nav = () => {
   return (
-    <div className="nav">
-      <h5>JS.</h5>
-      <nav>
-        <a href="">projects</a>
-        <a href="">skills</a>
-        <a href="">contact</a>
-      </nav>
-    </div>
+    <nav>
+      <h2>JS.</h2>
+      <div>
+        <a href="#">projects</a>
+        <a href="#">skills</a>
+        <a href="#">contact</a>
+        <DarkLight />
+      </div>
+    </nav>
   );
 };
 

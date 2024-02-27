@@ -5,12 +5,13 @@ import Projects from "../../../Simplefolio/src/components/Projects/Projects";
 import Skills from "../../../Simplefolio/src/components/Skills/Skills";
 import DarkLight from "../../../Simplefolio/src/components/DarkLight/DarkLight";
 
+import "./Home.css";
+
 const Home = () => {
   return (
     // für klassen haben wir "className"
     <div className="home">
       <Nav />
-      <DarkLight />
       <Header />
       <Projects />
       <Skills />
