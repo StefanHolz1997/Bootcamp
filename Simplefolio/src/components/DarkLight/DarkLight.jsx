@@ -1,7 +1,7 @@
 import "./DarkLight.css";
 
-const Nav = () => {
+const DarkLight = () => {
   return <div className="DarkLight"></div>;
 };
 
-export default Nav;
+export default DarkLight;

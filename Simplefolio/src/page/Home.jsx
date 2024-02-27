@@ -3,7 +3,7 @@ import Header from "../../../Simplefolio/src/components/Header/Header";
 import Nav from "../../../Simplefolio/src/components/Nav/Nav";
 import Projects from "../../../Simplefolio/src/components/Projects/Projects";
 import Skills from "../../../Simplefolio/src/components/Skills/Skills";
-import DarkLight from "../../../Simplefolio/src/components/darkLight/darkLight";
+import DarkLight from "../../../Simplefolio/src/components/DarkLight/DarkLight";
 
 const Home = () => {
   return (
