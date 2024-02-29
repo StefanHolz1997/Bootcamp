@@ -1,0 +1,9 @@
+.counter {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+.reset {
+  text-align: center;
+}
