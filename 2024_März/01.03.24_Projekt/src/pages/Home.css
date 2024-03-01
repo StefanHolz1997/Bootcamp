@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(http://fonts.googleapis.com/css?family=Ruluko);
+
+.container {
+  width: 25vw;
+  margin: auto;
+}
+
+.banking {
+  text-align: center;
+  background-color: rgb(249, 253, 0);
+
+  margin: 1vw 1vw;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px black;
+}
+
+.balance {
+  font-size: 2rem;
+  color: grey;
+  font-weight: 600;
+  font-family: Ruluko;
+}
+
+hr {
+  width: 20vw;
+}
+
+h1 {
+  color: grey;
+  font-family: Ruluko;
+  font-size: 2rem;
+}
+
+#bank {
+  margin: 1vw 1vw;
+  width: 10vw;
+  height: 3vh;
+  background-color: rgb(249, 253, 0);
+  border: none;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: grey;
+  font-size: 1rem;
+  font-family: Ruluko;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px black;
+}
+
+button {
+  text-transform: uppercase;
+  color: grey;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Ruluko;
+  margin: 1vw 1vw;
+  background-color: rgb(249, 253, 0);
+  border: none;
+  border-radius: 1rem;
+  padding: 1vw 1vw 1vw 1vw;
+  box-shadow: 0px 0px 10px black;
+}
