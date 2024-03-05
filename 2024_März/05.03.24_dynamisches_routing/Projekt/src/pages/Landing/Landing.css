@@ -1,0 +1,20 @@
+header {
+  background-color: rgb(11, 0, 60);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h2 {
+  margin-bottom: 4vh;
+  font-size: 40px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  border: 1.5px solid white;
+  padding: 10px 20px;
+}
