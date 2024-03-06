@@ -4,10 +4,11 @@ import Landing from "./pages/Landing/Landing";
 import Beers from "./pages/Beers/Beers";
 import Details from "./pages/Details/Details";
 import Random from "./pages/Random/Random";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <main>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
@@ -16,7 +17,7 @@ function App() {
           <Route path="/beers/random/:id" element={<Random />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </main>
   );
 }
 
