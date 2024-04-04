@@ -1,0 +1,36 @@
+@font-face {
+  font-family: chealseamarket;
+  src: url(../fonts/ChelseaMarket-Regular.ttf);
+}
+@font-face {
+  font-family: pacifico;
+  src: url(../fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+  font-family: pressstart;
+  src: url(../fonts/PressStart2P-Regular.ttf);
+}
+
+h1 {
+  background-color: greenyellow;
+  font-family: pressstart;
+  text-align: center;
+}
+p {
+  font-family: pacifico;
+}
+em {
+  font-family: chealseamarket;
+  text-shadow: 20px 20px 20px red;
+  font-weight: bold;
+}
+strong {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+a {
+  font-family: chealseamarket;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}

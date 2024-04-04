@@ -1,0 +1,11 @@
+header ul {
+  background-color: grey;
+  color: orange;
+  list-style: none;
+}
+section a {
+  color: orange;
+}
+section span {
+  color: orange;
+}

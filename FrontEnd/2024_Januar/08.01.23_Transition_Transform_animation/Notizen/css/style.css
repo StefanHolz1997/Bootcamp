@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+div {
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  height: 160px;
+  width: 160px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* ! Transition */
+  /*  Mehrere Optionen mit einem Komma trennen "transition: background-color 1s, border-radius 5s" */
+  /* 
+   ? all = Animiert alles
+   ? background-color = nur hintergrund
+   ? color = nur Schriftfarbe
+   ?etc.
+  */
+
+  /* * Wichtig - Ich muss es dem hauptelement geben und nicht dem Hover */
+  /* erster wert - was soll animiert werden */
+  /* zweiter wert- wie lange soll das dauern */
+  /* dritter wert- wie lange soll es verzügert werden */
+  /* vierter wert - wie soll die Animation ablaufen */
+  /* https://cubic-bezier.com/ */
+
+  transition: all 0.5s 0.2s ease-in-out;
+}
+
+/* ! Transform */
+div:hover {
+  /* ? Verschiebt das Element nach Rechts / Links (- Werte gehen auch) */
+  transform: translateX(-100px);
+
+  /* ? Verschiebt das Element nach Unten / Oben (- Werte geneh auch) */
+  transform: translateY(50px);
+
+  /* ? Verschiebt das Element in X und Y achse. Erster Wert ist X */
+  transform: translate(-100px, 50px);
+
+  /* ! Rotate */
+
+  /* ? animiert seitliche rotation */
+  transform: rotateY(180deg);
+
+  /* ? animiert oben unten rotation */
+  transform: rotateX(180deg);
+
+  /* ? animiert die rotation um die eigene achse */
+  transform: rotate(180deg);
+
+  /* ! Scale */
+  /* ? Animiert die höhe und breite (2 heist es wird 2x so groß) */
+  transform: scale(2);
+
+  /* ? Animiert die breite */
+  transform: scaleX(2);
+
+  /* ? Animiert die höhe */
+  transform: scaleY(2);
+
+  /* ! Skew */
+  /* ? animiert die höhe und breite (ecken) */
+  transform: skew(-10deg, -10deg);
+
+  /* ! Mehrer als Shorthand */
+  transform: translate(50px, 50px) rotate(90deg) scale(2);
+
+  /* ! Transform Origin */
+  transform: rotate(90deg);
+
+  /* ? Transform-origin verlagert den Ursprung der Transform. Default ist center */
+  /* transform-origin: top left; */
+}
+
+/* # ======== Animation ======== */
+
+section p {
+  font-size: 50px;
+
+  /* ? Mit animation rufe ich den Namen der Animation auf */
+  /* ? rotateHerz = name der Animation */
+  /* ? 2s = wie lange die Animation dauern soll */
+  /* ? ease-in-out = verlauf der Animation */
+  /* ? inifinite = wie oft soll die ANimation abgespielt werden */
+  /* ? alternate =  */
+
+  animation: rotateHerz 2s ease-in-out infinite alternate;
+}
+
+@keyframes rotateHerz {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: nunito;
+  src: url(../assets/font/Nunito-Regular.ttf);
+}
+@font-face {
+  font-family: nunitobold;
+  src: url(../assets/font/Nunito-Bold.ttf);
+}
+@font-face {
+  font-family: nunitoblack;
+  src: url(../assets/font/Nunito-Black.ttf);
+}
+@font-face {
+  font-family: rock;
+  src: url(../assets/font/RockSalt-Regular.ttf);
+}
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background: url(../assets/img/Dog_small.png) no-repeat center bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h2 {
+  font-family: rock;
+  font-size: 1.6rem;
+  padding: 1.6rem 0;
+}
+
+header p {
+  text-align: right;
+  color: #df8480;
+  font-size: 1.6rem;
+  font-family: nunitobold;
+  margin: 0 10vw 51.1vh 63vw;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(1 / 1fr);
+  text-align: center;
+}
+
+h3 {
+  background-color: #df8480;
+  color: white;
+  font-family: nunitoblack;
+  font-size: 1.6rem;
+  padding: 2.4vh 0;
+  text-align: center;
+}
+.steps h4 {
+  font-family: nunitoblack;
+  font-size: 4.8rem;
+  padding-top: 1.6vh;
+  color: #df8480;
+}
+.steps p {
+  font-family: nunitobold;
+  font-size: 1.6rem;
+  padding: 1.6vh 0;
+}
+
+.dogi {
+  background: url(../assets/img/Dogi.png) no-repeat center;
+  background-size: cover;
+  height: 25vh;
+}
+
+.foodwraper {
+  height: 30vh;
+  padding: 32px 17.15vw;
+}
+.food {
+  background: url(../assets/img/Dog_food.png) no-repeat center;
+  background-size: contain;
+  height: 25.6vh;
+  width: 65.7vw;
+}
+
+.menu p {
+  font-family: nunito;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 16px 16px 32px;
+}
+
+footer {
+  background-color: #242424;
+}
+
+footer p {
+  text-align: center;
+  font-family: nunitobold;
+  font-size: 1.6rem;
+  color: white;
+  padding: 16px 36.5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  margin: 16px;
+  padding: 16px 0;
+  border-radius: 50px;
+  text-align: center;
+  font-family: nunitobold;
+  font-size: 1.6rem;
+  color: #7b7b7b;
+}
+
+.sign {
+  margin: 0 16px 16px 16px;
+  padding: 16px 0;
+  border-radius: 50px;
+  text-align: center;
+  font-family: nunitobold;
+  font-size: 1.6rem;
+  color: white;
+  background-color: #df8480;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}

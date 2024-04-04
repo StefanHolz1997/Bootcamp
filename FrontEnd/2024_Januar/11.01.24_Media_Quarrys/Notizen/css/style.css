@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Overflow gibt an ob ein übergroßer Inhalt in einem Elementbschnitten sicht oder scrollbar seien soll */
+.overflow {
+  background-color: chocolate;
+  height: 600px;
+  overflow: hidden;
+  /* overflow: hidden - nicht sichtbar */
+  /* overflow: scroll - scrollbalken entsteht */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.overflow div {
+  width: 45vw;
+}
+.overflow img {
+  width: 45vw;
+}
+
+header {
+  background-color: aquamarine;
+}
+
+.burger {
+  height: 5px;
+  width: 25px;
+  background-color: black;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.burger-wraper {
+  top: 30px;
+  right: 30px;
+  position: fixed;
+  display: none;
+}
+
+.container {
+  background-color: bisque;
+  padding: 30px;
+  margin: 30px;
+  height: 1500px;
+  position: relative;
+}
+.container img {
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.back2top {
+  height: 20px;
+  width: 20px;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  cursor: pointer;
+}
+
+/* ! Media Queries */
+/* Handy - 567px */
+/* Tablets - 768px */
+/* Desktop - 992px */
+
+/* ? Desktop -> Handy (max-width) */
+/* das bedeutet dass das Design greift wenn die maximale breite erreicht ist oder unterschritten ist. */
+
+/* ? Handy -> Desktop (min-width)*/
+/* das nedeitet dass das Design greift wenn die maximale breite erreicht oder überschritten ist*/
+
+/* ? verschiedene Medientypen: 
+all (alle Endgeräte)
+print (Druckversion)
+screen (Bildschirm)
+ */
+
+/* ? logische Operatoren: 
+ and - kombiniert verschiedene Media queries
+ not - negiert 
+ only - benötigt medientyp, Unterstüzung von alten Browsern
+ Komma / or - mehrere Media queries
+ */
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .overflow {
+    background-color: violet;
+    flex-direction: column;
+    padding: 30px 40px;
+  }
+
+  .overflow div {
+    width: auto;
+  }
+
+  .overflow img {
+    width: auto;
+  }
+
+  .burger-wraper {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+}
+
+/* ? Verschiedene Medien eigenschaften
+- sehr viele verschiedene
+- t.B. and (orientation: portrait / landscape)
+- handy hochkant oder quer Format
+*/
+
+/* ? nur Beispielhafter Wert zur Veranschaulichung von landscape */
+
+/* ! Tablet */
+@media only screen and (max-width: 768px){
+
+}
+/* ! Handy */
+@media (max-width: 320px) and (orientation: landscape) {
+  .overflow {
+    background-color: brown;
+  }
+}
+
+
+/* z-index: damit kann man einen bereich in den Vordergrund oder hintergrund bewegen */
