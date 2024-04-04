@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Forms</h1>
+
+    <p>Welche gibt es?</p>
+
+    <!-- Form benutze ich bei einer Ansammlung von Input feldern (Benutze ich ab 2 inputs) -->
+
+    <form>
+      <!-- * Text -->
+      <!-- das for und die id sollen den selben namen tragen. Damit wir sie "Verheiraten" So kann ich auch auf das Label klicken und es wird das input ausgewählt.-->
+      <label for="vorname">Text</label>
+      <input id="vorname" type="text" />
+
+      <!-- * Number -->
+      <label for="number">Number</label>
+      <input id="number" type="number" />
+
+      <!-- * Tel -->
+      <label for="tel">Tel</label>
+      <input id="tel" type="tel" name="Tel" />
+
+      <!-- * Email -->
+      <label for="email">Email</label>
+      <input type="email" id="email" />
+
+      <!-- * Radius -->
+
+      <div>
+        <!-- Bei Radio benötigen wir auch das "Value" (Because of Java Script) -->
+        <!-- name benötigen wir hier um jeweils nur ein radio auswählen zu können -->
+        <label for="">Was machst du am liebsten?</label>
+        <input type="radio" name="fav-language" id="html" value="html" />
+        <label for="html">HTML</label>
+        <input type="radio" name="fav-language" id="css" value="css" />
+        <label for="css">CSS</label>
+        <input type="radio" name="fav-language" id="js" value="js" />
+        <label for="js">JS</label>
+      </div>
+
+      <br />
+      <!-- Benutzen wir wenn der User mehrere optionen anklicken kann -->
+      <!-- * Checkbox -->
+      <label for="checkbox">Checkbox 1</label>
+      <input type="checkbox" name="checkbox" id="" />
+      <label for="checkbox2">Checkbox 2</label>
+      <input type="checkbox" name="checkbox2" id="" />
+
+      <br />
+
+      <!-- * Date -->
+      <label for="date">Date</label>
+      <input type="date" id="date" />
+
+      <!-- * Password -->
+      <label for="password">password</label>
+      <input type="password" name="password" id="password" />
+
+      <!-- * File -->
+      <label for="file">File</label>
+      <input type="file" name="" id="file" />
+
+      <!-- * range -->
+      <!-- hier benötigen wir einen min und max wert der die range angiebt -->
+      <!-- step ist otional, jenachdem wieviele steps die range haben soll -->
+      <label for="range">Range</label>
+      <input type="range" id="range" min="0" max="10" step="5" />
+
+      <br />
+
+      <!-- * button -->
+      <input type="button" value="Halloooo" />
+
+      <br />
+
+      <!-- * textarea -->
+      <label for="textarea">Textarea</label>
+      <textarea id="textarea" cols="20" rows="10"></textarea>
+
+      <!-- * select & option -->
+      <!-- Hier kann ich auch nur eins auswählen -->
+      <!-- Same Same wie Radio -->
+      <!-- Hier benötigen wir wieder ein Value -->
+      <label for="cars">Select:</label>
+      <select id="cars">
+        <option value="clear"></option>
+        <option value="bmw">BmW</option>
+        <option value="audi">Audi</option>
+        <option value="vw">VW</option>
+      </select>
+
+      <br />
+
+      <!-- * submit -->
+      <input type="submit" value="-> senden" />
+    </form>
+
+    <!-- * Placeholder -->
+    <input type="text" placeholder="Vorname..." />
+
+    <!-- * Disabled -->
+    <label for="disabled">Disabled</label>
+    <input id="disabled" type="text" disabled />
+
+    <!-- * Required & Pflichtfeld -->
+    <form>
+      <label for="required">Pflichtfeld *</label>
+      <input id="required" type="text" required />
+      <input type="submit" value="-> senden" />
+    </form>
+  </body>
+</html>

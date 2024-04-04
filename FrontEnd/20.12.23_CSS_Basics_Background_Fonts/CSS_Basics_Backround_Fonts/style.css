@@ -1,0 +1,71 @@
+/* ! Font einbinden */
+/* Fonts Imports immer ganz oben in css */
+@font-face {
+  font-family: Holzis;
+  src: url(./Font/JosefinSans-Regular.ttf);
+}
+
+/* So  gebe ich jetzt allen Fonts meine Schriftart */
+html {
+  font-family: Holzis, Arial, Helvetica, sans-serif;
+}
+
+body {
+  /* DER WIRD NIEMALS GESTYLED!!!!!!!! */
+}
+
+/* ?Nimmt das Letzte Element von der Gruppe ul li */
+section ul li:last-child {
+  background-color: pink;
+}
+
+/* ? Nimmt das Letzte Element von jeweiligen Typen in diesem Fall H2 */
+h2:last-of-type {
+  background-color: pink;
+  color: white;
+}
+
+/* ? nimmt das erste Element von den Jeweiligen typen */
+h2:first-of-type {
+  color: grey;
+}
+
+/* ? Nimmt das Element was in der klammer steht (2) - Nur Zahlen eintragen */
+section ul li:nth-of-type(3) {
+  background-color: hotpink;
+  color: white;
+}
+
+section {
+  /* background-color: red; */
+  /* width: 150px; */
+  /* Mit festen Höhen aufpassen!! */
+  /* height: 400px */
+}
+
+footer article {
+  height: 200px;
+
+  /* Das ist eine Shordhand property */
+  background: url(./Landschaft-Gemaelde-Konvertiert-1024x502.jpg) no-repeat
+    center;
+
+  /* Macht das selbe wir in Zeile 33 */
+  /* background-image: url(./Landschaft-Gemaelde-Konvertiert-1024x502.jpg);
+  background-repeat: no-repeat;
+  background-position: center; */
+
+  /* Benötigen wir um das ganze Bild anzuzeigen */
+  background-size: contain;
+}
+
+footer h2 {
+  font-size: 40px;
+  text-decoration: underline;
+  /* 1: x achse */
+  /* 2: y achse */
+  /* 3: verlauf */
+  /* 4: Farbe des Schattens */
+  text-shadow: 10px, -20px, 0px, red;
+  letter-spacing: 10px;
+}

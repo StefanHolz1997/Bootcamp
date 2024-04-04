@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div:nth-child(odd) {
+  background-color: orange;
+}
+
+div:nth-child(even) {
+  background-color: blue;
+}
+
+/* Column sind Horizontal */
+/* Row sind vertikal */
+
+/* # ===== Version 1 ===== */
+
+/* ! Eltern Element ansprechen */
+
+.grid-parent {
+  background-color: lightgrey;
+  min-height: 100vh;
+  display: grid;
+
+  /* ! Bau erstmal die Basis der columns auf */
+
+  /* 1fr = 1 fraction (Bruchteil vom vergübaren Rest) */
+  /* 2fr = sind doppelt so groß wie 1fr */
+  /* ! Columns */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* Macht das selbe wie in Zeile 29 */
+  grid-template-columns: repeat(4, 1fr);
+
+  /* Ich kann auch mixen mit px und fr */
+  /* ? grid-template-columns: 1fr 1fr 50px 2fr; */
+  /* ! Row */
+  /* benutze ich in der regel nicht so oft, da die rows automatisch zusätzlich erzeugt werden, wenn grid merkt es benötigt mehr rows*/
+  /* grid-template-rows: repeat(5, 1fr); */
+
+  /* ! Gap */
+  /* oben unten */
+  row-gap: 5px;
+
+  /* links rechts */
+  column-gap: 5px;
+
+  /* überall */
+  gap: 5px;
+}
+
+section .box1 {
+  background-color: palevioletred;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  /* Kurzschreibform */
+  grid-column: 1 / span 4;
+
+  /* span benutzten - mit span sagen wir er soll sich über 4 Elemente strecken. (es wird also nicht mehr der rand gezählt) */
+
+  /* mit -1 nimmt er die ganze breite ein */
+  /* grid-column: 1 / -1; */
+
+  /* * Flex in Grid sieht man recht oft */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  /* ! Align- und Justify-self */
+  /* Default ist hier stretch angegeben */
+
+  align-self: stretch;
+  justify-self: stretch;
+
+  /* Kurzschreibform */
+  /* erster wert justify, zweiter wert align */
+  /* place-self: center center; */
+}
+
+.grid-parent div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* # ===== Version 2 ===== */
+
+/* ! Grid Areas */
+/*  Mit grid-template-areas können wir die Felder beschriften (Achtung es sollten die Felder auch zur verügung stehen) */
+
+.grid-parent {
+  grid-template-areas:
+    "header header header header"
+    "main main main side"
+    "footer footer footer footer";
+}
+/* Um Grid-area zu verwenden, miss ojc im Eltern Element "grid-template-areas:" vergeben. Hier sage ich dann, wo das Kindelement hin soll  : "grid-area: hallo;" */
+section .box10 {
+  background-color: brown;
+  grid-area: side;
+}

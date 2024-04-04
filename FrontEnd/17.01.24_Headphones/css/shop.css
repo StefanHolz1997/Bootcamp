@@ -1,0 +1,124 @@
+@font-face {
+  font-family: lucida;
+  src: url(../assets/font/LucidaGrande.ttf);
+}
+@font-face {
+  font-family: work;
+  src: url(../assets/font/WorkSans-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: work;
+}
+body {
+  background-color: #2e2e2e;
+}
+.wraper {
+  background: url(../assets/img/section-composition4.jpg) no-repeat;
+  background-size: 56.003vw 100vh;
+  height: 100vh;
+}
+
+/* !Header */
+.header {
+  position: sticky;
+  top: 0;
+  padding: 39px;
+  text-align: right;
+}
+.header nav {
+  display: flex;
+  gap: 25px;
+  justify-content: end;
+  padding-right: 40px;
+}
+.header img {
+  position: absolute;
+  left: 40px;
+  top: 29px;
+}
+.header a {
+  color: #867772;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transform: 0.6s;
+}
+.header a:hover {
+  color: #ebccc2;
+  text-decoration: underline;
+}
+
+/* !asidebar */
+.aside {
+  position: fixed;
+  margin-left: 2.5vw;
+  top: 19vh;
+}
+.aside a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #737373;
+  transition: 0.7s;
+}
+.aside a::before {
+  display: inline-block;
+  content: "○";
+  margin-right: 1.5vw;
+  color: #737373;
+}
+.aside a:nth-of-type(5)::before {
+  border: #ffffff 2px solid;
+  border-radius: 100%;
+  width: 20px;
+  text-align: center;
+}
+.aside a:nth-of-type(5) {
+  color: #ffffff;
+}
+.aside a:hover {
+  color: #ffffff;
+}
+.borderleft {
+  border-left: 0.5px solid #737373;
+  height: 4vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* !Main */
+main {
+  position: relative;
+}
+main section {
+  position: absolute;
+  max-width: 43.997vw;
+  top: 10vh;
+  right: 10vw;
+  text-align: center;
+}
+
+main section h2 {
+  font-size: 2.4rem;
+  color: #ebccc2;
+}
+main section p {
+  color: #737373;
+  font-size: 1.6rem;
+}
+main section p:nth-of-type(1) {
+  margin-bottom: 2vh;
+  margin-top: 1.8vh;
+}
+main section p:nth-of-type(2) {
+  margin-bottom: 1vh;
+}
+main section button {
+  padding: 12px 32px;
+  background-color: #ebccc2;
+  font-size: 1.6rem;
+}

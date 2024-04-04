@@ -1,0 +1,262 @@
+@font-face {
+  font-family: opensans;
+  src: url(../assets/font/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: opensanssemi;
+  src: url(../assets/font/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: opensansextra;
+  src: url(../assets/font/OpenSans-ExtraBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+main h3 {
+  font-size: 2.34rem;
+  font-family: opensansextra;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 41px;
+  letter-spacing: 5.26px;
+}
+main p {
+  font-size: 1.73rem;
+  font-family: opensans;
+  color: #c8ece9;
+  line-height: 28.6px;
+  letter-spacing: 1.3px;
+}
+
+header h1 {
+  font-size: 2.88rem;
+  font-family: opensansextra;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 53.1px;
+  letter-spacing: 6.82px;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 30px;
+}
+header p {
+  font-size: 1.73rem;
+  font-family: opensans;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 28.6px;
+  letter-spacing: 3.9px;
+}
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.38rem;
+  font-family: opensans;
+  color: #ffffff;
+  line-height: 52px;
+}
+
+header {
+  background: url(../assets/img/Section.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-right: 20px;
+}
+header article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header input {
+  margin-top: 35px;
+  background-color: #ed4933;
+  text-transform: uppercase;
+  padding: 12px 38px;
+  border-style: none;
+  color: #ffffff;
+  line-height: 30.3px;
+  letter-spacing: 3.12px;
+}
+
+.tolkien {
+  background-color: #21b2a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wander {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 104px 200px;
+}
+
+.wander h3 {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+.wander img {
+  padding-top: 60px;
+}
+
+.towns {
+  background-color: #273038;
+}
+
+.town1 {
+  display: flex;
+  max-height: 384px;
+}
+.town1 img {
+  max-width: 576px;
+}
+
+.town1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 70px;
+  padding-right: 100px;
+}
+
+.town1 p {
+  padding-top: 25px;
+}
+
+.town2 {
+  display: flex;
+  flex-direction: row-reverse;
+  max-height: 407px;
+}
+
+.town2 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 70px;
+  padding-right: 100px;
+}
+
+.town2 img {
+  max-width: 576px;
+}
+
+.promise {
+  background-color: #505393;
+  padding: 104px 200px;
+}
+
+.ourpromise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ourpromise p {
+  padding: 25px 11px 40px 11px;
+}
+
+.border {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
+}
+
+.promisegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.promisegrid article {
+  padding: 70px 72px 75px 80px;
+}
+.promisegrid article p {
+  padding-top: 20px;
+  color: #d3d4e4;
+}
+
+.grid1 {
+  background-color: #4d508e;
+}
+.grid2 {
+  background-color: #4a4d89;
+}
+.grid3 {
+  background-color: #484a83;
+}
+.grid4 {
+  background-color: #45477e;
+}
+.grid5 {
+  background-color: #424479;
+}
+.grid6 {
+  background-color: #3f4274;
+}
+
+.contact {
+  background: url(../assets/img/Section_1.jpg) no-repeat center;
+  background-size: cover;
+}
+.contact article {
+  padding: 104px 330px 70px 330px;
+  display: flex;
+}
+
+.contact div {
+  max-width: 494px;
+}
+.contact input {
+  background-color: #ed4933;
+  height: 43.33px;
+  width: 234px;
+  border-style: none;
+  color: white;
+  font-family: opensanssemi;
+  font-size: 1.38rem;
+  line-height: 43px;
+  letter-spacing: 3.12px;
+}
+
+footer {
+  background-color: #1f262c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer img {
+  padding-top: 90px;
+  padding-bottom: 43.3px;
+}
+footer p {
+  padding-bottom: 97.5px;
+  font-family: opensans;
+  font-size: 1.38rem;
+  line-height: 12.9px;
+  letter-spacing: 3.12px;
+  color: #8f9395;
+}
+footer a {
+  color: #8f9395;
+  text-decoration: underline dotted;
+}

@@ -1,0 +1,152 @@
+@font-face {
+  font-family: lucida;
+  src: url(../assets/font/LucidaGrande.ttf);
+}
+@font-face {
+  font-family: work;
+  src: url(../assets/font/WorkSans-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: work;
+}
+.wraper {
+  background-color: #2e2e2e;
+}
+
+/* !Header */
+.header {
+  position: sticky;
+  top: 0;
+  padding: 25px;
+  text-align: right;
+}
+.header nav {
+  display: flex;
+  gap: 45px;
+  justify-content: end;
+  padding-right: 40px;
+}
+.header img {
+  position: absolute;
+  left: 40px;
+  top: 29px;
+}
+.header a {
+  color: #867772;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transform: 0.6s;
+}
+.header a:hover {
+  color: #ebccc2;
+  text-decoration: underline;
+}
+
+/* !asidebar */
+.aside {
+  position: fixed;
+  margin-left: 2.5vw;
+  top: 19vh;
+}
+.aside a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #737373;
+  transition: 0.7s;
+}
+.aside a::before {
+  display: inline-block;
+  content: "○";
+  margin-right: 1.5vw;
+  color: #737373;
+}
+.aside a:nth-of-type(4)::before {
+  border: #ffffff 2px solid;
+  border-radius: 100%;
+  width: 20px;
+  text-align: center;
+}
+.aside a:nth-of-type(4) {
+  color: #ffffff;
+}
+.aside a:hover {
+  color: #ffffff;
+}
+.borderleft {
+  border-left: 0.5px solid #737373;
+  height: 4vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* !main */
+.main {
+  margin-left: 19.985vw;
+}
+
+.video {
+  margin-bottom: 2.9vh;
+}
+
+.main h1 {
+  font-size: 1.9rem;
+  color: #ebccc2;
+  letter-spacing: 2px;
+  margin-bottom: 1.4vh;
+}
+.main h2 {
+  font-size: 4rem;
+  color: #ebccc2;
+  margin-bottom: 2.8vh;
+}
+.main button {
+  color: #737373;
+  background-color: transparent;
+  padding: 0.2vh 1.216vw;
+  border-style: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+.main div {
+  margin-bottom: 1.5vh;
+}
+.main p {
+  color: #737373;
+  font-size: 1.6rem;
+  margin-bottom: 10vh;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 395px 395px;
+  padding-bottom: 8vh;
+}
+.grid img {
+  width: 395px;
+  height: 395px;
+}
+.grid p {
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #737373;
+}
+.grid h4 {
+  color: #ebccc2;
+  font-size: 1.9rem;
+}
+.grid h5 {
+  color: #ebccc2;
+  font-size: 2.4rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.988vw;
+  padding-right: 1.216vw;
+}

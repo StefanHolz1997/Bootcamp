@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Lato;
+  src: url(../assets/font/Lato-Regular.ttf);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+h1 {
+  font-size: 2.4rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+h1::before {
+  content: url(../assets/img/logo.png.png);
+}
+
+.head {
+  display: flex;
+  gap: 3.2rem;
+  align-items: flex-end;
+  padding: 1.5rem 6.4rem;
+}
+
+.links {
+  width: 100vw;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+}
+
+.links div {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.links div a {
+  text-decoration: none;
+  color: black;
+}
+
+.section {
+  background-color: #d9e8e5;
+  display: flex;
+  justify-content: center;
+}
+
+.rings {
+  background-color: #d9e8e5;
+  padding-top: 8rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.rings h2 {
+  font-size: 2.4rem;
+  align-self: flex-start;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+/* !Main */
+
+.rings article div p {
+  font-size: 1.6rem;
+  margin: 1.4rem;
+}
+
+.items {
+  width: 34rem;
+  height: 22.7rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.rings article div:nth-of-type(1) {
+  background: url(../assets/img/ring001.png.jpg) no-repeat center;
+  background-size: cover;
+}
+.rings article div:nth-of-type(2) {
+  background: url(../assets/img/ring002.png.jpg) no-repeat center;
+  background-size: cover;
+}
+.rings article div:nth-of-type(3) {
+  background: url(../assets/img/ring003.png.jpg) no-repeat center;
+  background-size: cover;
+}
+.rings article div:nth-of-type(4) {
+  background: url(../assets/img/ring004.png.jpg) no-repeat center;
+  background-size: cover;
+}
+.rings article div:nth-of-type(5) {
+  background: url(../assets/img/ring005.png.jpg) no-repeat center;
+  background-size: cover;
+}
+.rings article div:nth-of-type(6) {
+  background: url(../assets/img/ring006.png.jpg) no-repeat center;
+  background-size: cover;
+}
