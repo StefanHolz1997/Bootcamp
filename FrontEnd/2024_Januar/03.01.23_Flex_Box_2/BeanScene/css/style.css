@@ -1,0 +1,9 @@
+@font-face {
+  font-family: clicker;
+  src: url(../assets/font/ClickerScript-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

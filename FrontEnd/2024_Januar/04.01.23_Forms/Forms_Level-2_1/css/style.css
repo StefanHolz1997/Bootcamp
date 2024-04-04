@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+h2 {
+  background-color: #43d1af;
+  width: 20vw;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  width: 20vw;
+  padding: 10px;
+}
+
+#contact {
+  margin: 4px 0;
+  padding: 10px 10px;
+}
+
+textarea {
+  height: 7vh;
+}
+
+input[type="submit"] {
+  background-color: #43d1af;
+  border-style: none;
+  transition: 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #2ebc99;
+}

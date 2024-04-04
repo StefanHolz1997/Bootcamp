@@ -1,0 +1,23 @@
+label {
+  display: block;
+  font-size: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+  /* border: 1px solid green; */
+}
+
+input[type="text"] {
+  height: 40px;
+}
+
+input[type="number"] {
+  background-color: red;
+}
+
+textarea {
+  background-color: aqua;
+  width: 100px;
+  height: 30px;
+}
