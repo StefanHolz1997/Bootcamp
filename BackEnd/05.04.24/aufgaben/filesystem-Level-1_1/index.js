@@ -1,4 +1,3 @@
-import { ifError } from "assert";
 import * as fs from "fs";
 
 fs.writeFile("./blog1.txt", "Ich bin ein Webdeveloper!", (err) => {
