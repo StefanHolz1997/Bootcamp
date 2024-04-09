@@ -1,0 +1,25 @@
+body {
+  background-color: aqua;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+}
