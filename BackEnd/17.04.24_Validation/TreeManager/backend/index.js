@@ -16,7 +16,7 @@ app.get("/", (req, res) => res.send("it works ;) "));
 
 app.get("/api/v1/trees/:treeId", param("treeId").isNumeric(), (req, res) => {
   const validationErrors = validationResult(req);
-  if (!validationResult.isEmpty()) {
+  if (!validationErrors.isEmpty()) {
     return res
       .status(400)
       .json({ message: "Data not valid", errors: validationErrors.array() });
@@ -25,7 +25,7 @@ app.get("/api/v1/trees/:treeId", param("treeId").isNumeric(), (req, res) => {
 
   //Readone
   readTreeData()
-    .then((trees) => trees.find((tree) => tree.id.toString() === treeID))
+    .then((trees) => trees.find((tree) => tree.id.toString() === treeId))
     .then((foundTree) => {
       if (foundTree) res.json(foundTree);
       else res.status(404).json({ message: "Could not find tree" + treeId });
@@ -53,7 +53,7 @@ app.post(
 
   (req, res) => {
     const validationErrors = validationResult(req);
-    if (!validationResult.isEmpty()) {
+    if (!validationErrors.isEmpty()) {
       return res
         .statur(400)
         .json({ message: "Data not valid", errors: validationErrors.array() });
