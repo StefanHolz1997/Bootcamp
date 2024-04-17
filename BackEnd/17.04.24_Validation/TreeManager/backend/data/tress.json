@@ -1,0 +1,17 @@
+[
+  {
+    "treeId": 1,
+    "contact": {
+      "name": "Dr.Baum",
+      "email": "baum@forest-alliance.com",
+      "phone": "01389732457"
+    },
+    "age": 12,
+    "geo": "48.2304, -3.4983",
+    "area": "North of Big Forrest",
+    "type": "Laubbaum",
+    "radius": 34,
+    "height": 600,
+    "imageurl": "160509_Starke-Baumtypen_Eiche-im-Seidengewand_02.jpg"
+  }
+]
