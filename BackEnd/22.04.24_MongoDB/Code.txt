@@ -16,7 +16,7 @@ Rufe alle Filme ab, die eine Rotten Tomatoes Benutzerbewertung von mindestens 4 
 
 Rufe alle Filme ab, die weniger als 1000 Benutzer-Rezensionen bei Rotten Tomatoes haben und vor dem Jahr 2005 gedreht wurden. Sortiere sie aufsteigend nach der Anzahl der Benutzer-Rezensionen und beschränke die Suche auf 10 Filme.
 
-    db.movieDetails.find({$and:[{'tomato.userReviews':{$lt:1000}}, {year:2010}]}).limit(10).sort({'tomato.userReviews':1})
+    db.movieDetails.find({$and:[{'tomato.userReviews':{$lt:1000}}, {year:{$lt:2005}}]}).limit(10).sort({'tomato.userReviews':1})
 
 Rufe alle Filme ab, die das Feld 'Rotten Tomatoes' nicht enthalten.
 
